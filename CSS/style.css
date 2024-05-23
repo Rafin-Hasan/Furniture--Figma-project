@@ -1,0 +1,400 @@
+/* ================= Fonts ================ */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@400..700&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+/* =============== common css ============= */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+h1 h2 h3 h4 h5 h6 p a{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+:root{
+    --mans: "Montserrat", sans-serif;
+}
+
+/* ================ navber ============= */
+.logo{
+    font-family: var(--mans);
+    font-weight: 700;
+    font-size: 34px;
+    color: #054C73;
+    left: 120px;
+}
+#navbarNav{
+    display: flex;
+    justify-content: end;
+}
+#navbarNav ul{
+    gap: 67px;
+}
+a{
+    font-family: var(--mans) ;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+}
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background: 
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    );    
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+/* =============== banner =============== */
+#heading_part{
+    background-image: url(../img/bg.jpg);
+    width: 100%;
+    height: 749px;
+}
+.banner_main{
+    display: flex;
+    justify-content: end;
+    padding-top: 155px;
+}
+.new_collection_bg{
+    width: 643px;
+    height: 443px;
+    background: #DFE9F4;
+    border-radius: 10px;
+}
+.new_collection{
+    width: 546px;
+    height: 365px;
+    padding-top: 37px;
+    padding-left: 39px;
+}
+.new_collection .p1{
+    font-family: var(--mans) ;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.new_collection h1{
+    width: 421px;
+    font-family: var(--mans);
+    font-weight: 700;
+    font-size: 52px;
+    color: #054C73;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.new_collection .p2{
+    font-family: var(--mans) ;
+    font-size: 18px;
+    font-weight: 500;
+} 
+.btn1{
+    width: 229px;
+    height: 70px;
+    background: #054C73;
+    color: #fff;
+    border-radius: 50px;
+    font-family: var(--mans);
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    transition: all linear .3s;
+}
+.btn1:hover{
+    background: #fff;
+    color: #054C73;
+    border: 1px solid #03344F;
+}
+/* ========== extra banner css ===== */
+.extra_bg{
+    background: #F2F5FF;
+}
+.extra{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 46px;
+    padding-bottom: 49px;
+}
+.extra .delivery{
+    display: flex;
+    gap: 27px;
+}
+.extra .delivery_text h6{
+    font-family: var(--mans);
+    font-weight: 600;
+    font-size: 24px;
+}
+.extra .delivery_text p{
+    font-family: var(--mans);
+    font-weight: 400;
+    font-size: 16px;
+}
+/* ============== extra banner part css ends ========== */
+/* ==============  Inspiration part css starts ========== */
+.text{
+    text-align: center;
+    padding-top: 60px;
+}
+.text h2{
+    font-family: var(--mans);
+    font-weight: 800;
+    font-size: 32px;
+}
+.text p{
+    font-family: var(--mans);
+    font-weight: 400;
+    font-size: 20px;
+    color: #666666;
+}
+.three_img{
+    display: flex;
+    justify-content: space-between;
+}
+.three_img .first_img{
+    padding-top: 75px;
+    padding-bottom: 62px;
+}
+.three_img .third_img{
+    padding-top: 75px;
+    padding-bottom: 62px;
+}
+.shrink img {
+    transition: 1s ease;
+}
+    
+.shrink img:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+}
+/* ============== Inspiration part css ends ========== */
+/* ============== Beautify part css starts ========== */
+#Beautify_bg{
+    width: 100%;
+    height: 874px;
+    background: #F2F5FF;
+}
+.Beautify{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+}
+.Beautify_text{
+    padding-top: 240px;
+    width: 489px;
+}
+.Beautify_text h3{
+    font-family: var(--mans);
+    font-weight: 700;
+    font-size: 32px;
+}
+.Beautify_text p{
+    font-family: var(--mans);
+    font-weight: 400;
+    font-size: 20px;
+    color: #666666;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+/* ============== Beautify part css ends ========== */
+/* ============== Browse part css starts ========== */
+.Browse_text{
+    text-align: center;
+    padding-top: 60px;
+}
+.Browse_text h2{
+    font-family: var(--mans);
+    font-weight: 800;
+    font-size: 32px;
+}
+.Browse_text p{
+    font-family: var(--mans);
+    font-weight: 400;
+    font-size: 20px;
+    color: #666666;
+}
+.Browse_img{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.Browse_img .first_img h6{
+    text-align: center;
+    font-family: var(--mans);
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 30px;
+    margin-bottom: 121px;
+}
+/* ============== Browse part css ends ========== */
+/* ============== work part css starts ========== */
+.work_text h2{
+    font-family: var(--mans);
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
+}
+.work_text p{
+    font-family: var(--mans);
+    font-weight: 400;
+    font-size: 20px;
+    color: #666666;
+    text-align: center;
+}
+.work_img{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.work_img h6{
+    text-align: center;
+    font-family: var(--mans);
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 30px;
+}
+.work_img p{
+    font-family: var(--mans);
+    font-weight: 400;
+    font-size: 18px;
+    color: #666666;
+    text-align: center;
+    margin-bottom: 198px;
+}
+/* ============== work part css ends ========== */
+/* ============== mailing part css starts ========== */
+#join {
+    background: #F2F5FF;
+}
+
+.join_text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #333333;
+    padding-top: 59px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.join_text p {
+    width: 514px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--Montserrat);
+    color: #666666;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.join_input {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 61px;
+}
+
+.join_input input {
+    padding: 25px 133px 25px 25px;
+}
+
+.join_input input ::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--Montserrat);
+    color: #011C42;
+}
+
+.join_input {
+    display: flex;
+    justify-content: center;
+}
+
+.join_input button {
+    padding: 26px 42px;
+    background: #054C73;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #fff;
+    transition: all linear .3s;
+}
+.error{
+    text-align: center;
+    color: red;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+}
+.join_input button:hover {
+    color: #000;
+    background: #fff;
+    color: #011C42;
+}
+/* ============== mailing part css ends ========== */
+/* ============== Footer part css starts ========== */
+#footer_bg{
+    width: 100%;
+    height: 386px;
+    background: #03344F;
+}
+.main_footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_text{
+    padding-top: 49px;
+}
+.footer_text h6{
+    font-family: var(--mans);
+    font-weight: 800;
+    font-size: 24px;
+    color:#fff
+}
+.footer_text p{
+    width: 400px;
+    font-family: var(--mans);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+.footer_img{
+    padding-top: 49px;
+}
+.footer_img h6{
+    font-family: var(--mans);
+    font-weight: 800;
+    font-size: 24px;
+    color:#fff
+}
+.all_images{
+    display: flex;
+    gap: 21px;
+    padding-top: 34px;
+}
+/* ============== Footer part css ends ========== */
